@@ -51,6 +51,9 @@ class _State extends State<ContentPage> {
         // ---------------------------------------
         // 1. Implementa el metodo onSignOff para redirigir a la ruta de autenticación
         // ---------------------------------------
+        onSignOff: () {
+          Get.offNamed('/auth');
+        },
       ),
       body: SafeArea(
         child: Padding(

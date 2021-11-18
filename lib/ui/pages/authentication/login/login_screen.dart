@@ -61,6 +61,9 @@ class _State extends State<LoginScreen> {
                     // ---------------------------------------
                     // 1. Implementa el metodo onPressed para ejecutar una acción al presionar el boton 'Iniciar Sesiòn'
                     // ---------------------------------------
+                    onPressed: () {
+                      Get.offNamed('/content');
+                    },
                     child: const Text("Login"),
                   ),
                 ),
