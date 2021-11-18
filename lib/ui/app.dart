@@ -21,12 +21,13 @@ class App extends StatelessWidget {
       // Por defecto tomara la seleccion del sistema
       themeMode: ThemeMode.system,
       home: const AuthenticationPage(),
-       // ---------------------------------------
-       // 1. Crea las rutas posibles para nuestra app
-       // ---------------------------------------
-      routes: {},
+      // ---------------------------------------
+      // 1. Crea las rutas posibles para nuestra app
+      // ---------------------------------------
+      routes: {
         '/auth': (context) => const AuthenticationPage(),
         '/conent': (context) => const ContentPage(),
+      },
     );
   }
 }
